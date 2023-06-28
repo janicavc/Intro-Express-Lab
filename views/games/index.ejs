@@ -1,0 +1,12 @@
+<body>
+    <h1>Games List</h1>
+    <ul>
+      <% games.forEach(function(game) { %>
+        <li>
+          <%= game.recommend %>
+            - 
+          <%= game.fun ? 'fun' : 'not fun' %>
+        </li>
+      <% }); %>
+    </ul>
+  </body>
